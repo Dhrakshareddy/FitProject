@@ -1,0 +1,43 @@
+
+
+<div id="con">
+  <div class="container mt-2">
+    <div class="row p-4 text-end ">
+      <div class=" d-flex justify-content-end ">
+        <h1>Nutrition Details</h1>
+       
+      
+      </div>
+    <table class="table table-bordered  mt-4">
+      <thead class="table-dark" >
+        <tr>
+          <th>Calories</th>
+          <th>Carbohydrates</th>
+        
+          <th>Proteins</th>
+        
+          
+         
+        </tr>
+      </thead>
+      <tbody class="tbody" >
+        <tr *ngFor="let nutrition of nutritionList">
+          <td>{{ nutrition.caloriesToBeconsumed }}</td>
+          <td>{{ nutrition.carbohydratesToBeconsumed }}</td>
+
+          <td>{{ nutrition.proteinToBeconsumed }}</td>
+        
+        </tr>
+       
+     
+      </tbody>
+    </table>
+  </div>
+  
+  </div>
+</div>
+
+  
+
+  
+

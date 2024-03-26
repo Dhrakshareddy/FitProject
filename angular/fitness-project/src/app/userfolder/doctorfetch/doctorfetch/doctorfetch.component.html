@@ -1,0 +1,29 @@
+<button (click)="fetchDoctor()">Fetch Doctor</button>
+<div>
+
+  <table class="custom-table">
+    <thead>
+      <h2>Doctor Details</h2>
+      <input type="text" [(ngModel)]="doctorName" placeholder="Enter doctorname">
+
+      <tr>
+
+        <th>DoctorId</th>
+        <th>DoctorName</th>
+        <th>YearOfExperience</th>
+        <th>Email</th>
+        <th>contactNumber</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let doctor of doctorList">
+
+        <td>{{ doctor.doctorId}}</td>
+        <td>{{doctor.doctorName}}</td>
+        <td>{{ doctor.yearOfExperience }}</td>
+        <td>{{doctor.email}}</td>
+        <td>{{doctor.contactNumber}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

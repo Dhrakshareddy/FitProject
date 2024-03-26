@@ -1,0 +1,13 @@
+<body>
+<div  class="store-container" id="container">
+    <div style="display: flex; flex-wrap: wrap;">
+    <div *ngFor="let product of storeProducts" class="product-card" id="con">
+      <img [src]="product.image" alt="{{ product.name }}" class="product-image" width="230px" height="100px">
+      <h3 id="head">{{ product.name }}</h3>
+      <p id="middle">{{ product.description }}</p>
+      <p id="last"><strong>Price: ${{ product.price }}</strong></p>
+      
+    </div>
+  </div>
+  </div>
+</body>

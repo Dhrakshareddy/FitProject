@@ -1,0 +1,31 @@
+<div id="body">
+  <select >weekly
+    <option>Monthly</option>
+    <option>Weekly</option>
+  </select>
+<div id="container">
+ 
+    <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Sleep Tracker</th>
+            <th>Medicine Tracker</th>
+            <th>Handwash Tracker</th>
+            <th>Heart Rate Tracker</th>
+            <th>Respiratory Rate Tracker</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let day of days">
+            <td>{{ day }}</td>
+            <td><input type="text" [(ngModel)]="sleepTracker[day]" /></td>
+            <td><input type="text" [(ngModel)]="medicineTracker[day]" /></td>
+            <td><input type="text" [(ngModel)]="handwashTracker[day]" /></td>
+            <td><input type="text" [(ngModel)]="heartRateTracker[day]" /></td>
+            <td><input type="text" [(ngModel)]="respiratoryRateTracker[day]" /></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</div>

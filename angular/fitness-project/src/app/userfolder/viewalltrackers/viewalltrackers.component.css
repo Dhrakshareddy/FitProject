@@ -1,0 +1,19 @@
+#container{
+    position: absolute;
+    top: 200px;
+    left: 300px;
+   padding-bottom: 50px;
+   color:black;
+  
+}
+#body{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(../../../assets/viewall.jfif); */
+    background-size: cover;
+    background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  z-index: -10;
+
+}

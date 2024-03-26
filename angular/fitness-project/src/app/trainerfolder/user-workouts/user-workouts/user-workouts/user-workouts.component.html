@@ -1,0 +1,31 @@
+<h2>Workouts Details</h2>
+
+
+    <div>
+    <table id="table" class="custom-table">
+        <thead>
+          <tr>
+            
+            <th class="th" style="width: 60px">User Name</th>
+            <th class="th" style="width: 60px">Date</th>
+            <th class="th" style="width:50px">Duration</th>
+            <th class="th" style="width:100px">SetsCompleted</th>
+            
+            
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let workout of workouts">
+          
+          
+            <td style="border: 1px solid black;">{{ workout.name }}</td>
+            <td style="border: 1px solid black;">{{ workout.workoutDate }}</td>
+            <td style="border: 1px solid black;">{{ workout.duration }}</td>
+            <td style="border: 1px solid black;">{{ workout.setsCompleted }}</td>
+         
+
+          </tr>
+        </tbody>
+      </table>
+    </div>

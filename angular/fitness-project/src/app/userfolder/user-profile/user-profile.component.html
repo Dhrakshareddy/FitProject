@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <section>
+        <div class="card">
+            <div class="left-container">
+                <div id="img"></div>
+                <h2>{{ user.name }}</h2>
+                
+            </div>
+            <div class="right-container">
+                <h1>Profile Details</h1>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>:</td>
+                        <td>{{ user.name }}</td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth</td>
+                        <td>:</td>
+                        <td>{{ user.dateOfBirth | date }}</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td>{{ user.email }}</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Number</td>
+                        <td>:</td>
+                        <td>{{ user.contactNumber }}</td>
+                    </tr>
+                    <tr>
+                        <td>Trainer Code</td>
+                        <td>:</td>
+                        <td>{{ user.trainerCode }}</td>
+                    </tr>
+                    <tr>
+                        <td>Doctor Code</td>
+                        <td>:</td>
+                        <td>{{ user.doctorCode }}</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

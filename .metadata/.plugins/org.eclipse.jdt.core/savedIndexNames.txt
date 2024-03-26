@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+D:\Automated-fitness\.metadata\.plugins\org.eclipse.jdt.core
+4058448694.index
+680374785.index
+1600473430.index
+1598400142.index
+1118982603.index
+1865797976.index

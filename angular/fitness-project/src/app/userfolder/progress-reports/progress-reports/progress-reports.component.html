@@ -1,0 +1,36 @@
+
+
+<div id="con">
+  <div class="container mt-2">
+    <div class="row p-4 text-end ">
+      <div class=" d-flex justify-content-end ">
+        <h1>Track Your Progress</h1>
+       
+      
+      </div>
+    <table class="table table-bordered  mt-4">
+      <thead class="table-dark" >
+        <tr>
+          <th>Date</th>
+         <th>% Of Task Completion</th>
+             </tr>
+      </thead>
+      <tbody class="tbody" >
+        <tr *ngFor="let progress of progress">
+          <td>{{progress.progressDate}}</td>
+          <td>{{progress.calculateProgress}}</td>
+         </tr>
+     
+      </tbody>
+    </table>
+  </div>
+  
+  </div>
+</div>
+
+  
+
+  
+
+
+

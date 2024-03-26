@@ -1,0 +1,29 @@
+<h2>User Details</h2>
+<input type="text" [(ngModel)]="userName" placeholder="Enter user name">
+<button (click)="fetchUser()">Fetch User</button>
+<div>
+  
+  <table class="custom-table">
+    <thead>
+      <tr>
+      
+       
+        <th>UserName</th>
+        <th>Email</th>
+        <th>ContactNo</th>
+        <th>Dob</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userList">
+       
+       
+        <td>{{user.name}}</td>
+        <td>{{ user.email }}</td>
+        <td>{{user.contactNumber}}</td>
+        <td>{{user.dob}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="background-color: black; width: 100vw; height: 100vh;"></div>
