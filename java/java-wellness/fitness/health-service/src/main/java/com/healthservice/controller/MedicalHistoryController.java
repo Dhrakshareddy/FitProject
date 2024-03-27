@@ -23,7 +23,7 @@ import com.healthservice.service.MedicalHistoryService;
 
 @RestController
 @RequestMapping("/medicalHistory")
-@CrossOrigin(origins = "http://13.48.82.196:4200")
+@CrossOrigin("*")
 public class MedicalHistoryController {
 
 	private static final Logger log = LoggerFactory.getLogger(MedicalHistoryController.class);

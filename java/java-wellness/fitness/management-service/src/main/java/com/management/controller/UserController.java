@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RestController
 @RequestMapping("/user")
-@CrossOrigin(origins = "http://13.48.82.196:4200")
+@CrossOrigin("*")
 public class UserController {
 
     private static final Logger log = LoggerFactory.getLogger(UserController.class);

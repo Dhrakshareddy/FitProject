@@ -83,7 +83,7 @@ const routes: Routes = [
 
 
   {
-    path: 'adminurl', component: AdminnavComponent,
+    path: 'admin', component: AdminnavComponent,
     children: [
       { path: 'users', component: UserListComponent },
       { path: 'users/add', component: UserFormComponent },

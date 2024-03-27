@@ -15,7 +15,7 @@ import com.traineeservice.service.AttendanceService;
 
 @RestController
 @RequestMapping(path = "attendance")
-@CrossOrigin(origins = "http://13.48.82.196:4200")
+@CrossOrigin("*")
 public class AttendanceController {
 
 	private static final Logger log = LoggerFactory.getLogger(AttendanceController.class);

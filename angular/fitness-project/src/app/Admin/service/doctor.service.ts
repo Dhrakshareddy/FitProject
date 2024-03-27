@@ -14,7 +14,7 @@ export class DoctorService {
     throw new Error('Method not implemented.');
   }
 
-  private apiUrl = 'http://13.48.82.196/api/doctor_profile';
+  private apiUrl = 'http://13.48.82.196:8402/api/doctor_profile';
 
 
   constructor(private http: HttpClient) { }

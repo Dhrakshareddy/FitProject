@@ -58,7 +58,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem("role", 'ADMIN')
       this.auth.isLogged = true;
       this.showSnackBar("Admin login successfuly");
-      this.router.navigate(['/adminurl']);
+      this.router.navigate(['/admin']);
    
     }
     else if (this.loginForm.valid) {

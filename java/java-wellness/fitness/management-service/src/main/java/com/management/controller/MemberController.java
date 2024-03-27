@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RestController
 @RequestMapping("/membership")
-@CrossOrigin(origins = "http://13.48.82.196:4200")
+@CrossOrigin("*")
 public class MemberController {
 
 	private static final Logger log = LoggerFactory.getLogger(MemberController.class);

@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RestController
 @RequestMapping("/doctor_profile")
-@CrossOrigin(origins = "http://13.48.82.196:4200")
+@CrossOrigin("*")
 public class DoctorController {
 
 	@Autowired
